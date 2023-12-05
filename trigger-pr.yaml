@@ -1,11 +1,8 @@
 trigger:
   batch: true
   branches: # Branch names to include or exclude for triggering a run.
-  #   include:
-  #   - main
     exclude:
-      - feat/*
-      - features/*
+    - "*"
   tags:
     include:
       - prod@*
