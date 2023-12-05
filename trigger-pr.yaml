@@ -1,5 +1,5 @@
 trigger:
-  branches: # Branch names to include or exclude for triggering a run.
+  # branches: # Branch names to include or exclude for triggering a run.
   #   include:
   #   - main
   #   exclude: 
@@ -10,7 +10,7 @@ trigger:
     - README.md
   tags: # Tag names to include or exclude for triggering a run.
     include: 
-    - deploy-prod
+    - refs/tags/*-release
 
 pr:
   branches:
