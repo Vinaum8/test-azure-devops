@@ -5,13 +5,12 @@ trigger:
   #   exclude: 
   #   - feat/*
   #   - features/*
-  paths:
-    exclude:
-    - README.md
-  tags: # Tag names to include or exclude for triggering a run.
-    include: 
-    - refs/tags/*-release
-
+  # paths:
+  #   exclude:
+  #   - README.md
+  tags:
+    include:
+      - prod@*
 pr:
   branches:
     include:
