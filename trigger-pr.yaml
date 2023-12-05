@@ -8,15 +8,15 @@ trigger:
   tags:
     include:
       - prod@*
-pr:
-  branches:
-    include:
-    - main
-    exclude:
-    - features/*
-  paths:
-    exclude:
-    - README.md
+# pr:
+#   branches:
+#     include:
+#     - main
+#     exclude:
+#     - features/*
+#   paths:
+#     exclude:
+#     - README.md
 
 pool:
   vmImage: ubuntu-latest
