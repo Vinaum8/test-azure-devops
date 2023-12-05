@@ -1,10 +1,10 @@
 trigger:
-  branches: # Branch names to include or exclude for triggering a run.
-    include:
-    - main
-    exclude: 
-    - feat/*
-    - features/*
+  # branches: # Branch names to include or exclude for triggering a run.
+  #   include:
+  #   - main
+  #   exclude: 
+  #   - feat/*
+  #   - features/*
   # paths:
   #   exclude:
   #   - README.md
