@@ -5,9 +5,9 @@ trigger:
     exclude: 
     - feat/*
     - features/*
-  paths:
-    exclude:
-    - README.md
+  # paths:
+  #   exclude:
+  #   - README.md
   tags: # Tag names to include or exclude for triggering a run.
     include: 
     - deploy-prod
