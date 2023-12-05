@@ -8,6 +8,7 @@ trigger:
   tags:
     include:
       - prod@*
+
 # pr:
 #   branches:
 #     include:
@@ -22,9 +23,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- bash: |
-    which bash
-    echo Hello $name
-  displayName: Multiline Bash script
+- displayName: Multiline Bash script
   env:
     name: Microsoft
+  bash: |
+    which bash
+    echo Hello $name
