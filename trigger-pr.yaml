@@ -3,9 +3,8 @@ trigger:
   #   include:
   #   - main
     exclude:
-    - main
-    - feat/*
-    - features/*
+      - feat/*
+      - features/*
   tags:
     include:
       - prod@*
