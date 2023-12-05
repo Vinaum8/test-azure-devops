@@ -1,0 +1,35 @@
+trigger:
+
+  branches: # Branch names to include or exclude for triggering a run.
+    include:
+    - main
+    exclude: 
+    - feat/*
+    - features/*
+  paths:
+    exclude:
+    - README.md
+  tags: # Tag names to include or exclude for triggering a run.
+    include: 
+    - deploy-prod
+
+pr:
+  branches:
+    include:
+    - main
+    exclude:
+    - features/*
+  paths:
+    exclude:
+    - README.md
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- bash: |
+    which bash
+    echo Hello $name
+  displayName: Multiline Bash script
+  env:
+    name: Microsoft
